@@ -12,9 +12,9 @@ pipeline {
                 sh 'npm install'
             }
         }
-                stage('Instalar dependencia') {
+                stage('Executar testes') {
             steps {
-                sh 'NO_COLOR=1 npm run cy:run
+                sh 'NO_COLOR=1 npm run cy:run'
             }
         }
     }
