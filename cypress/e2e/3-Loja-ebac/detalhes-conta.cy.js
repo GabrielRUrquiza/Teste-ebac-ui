@@ -14,5 +14,4 @@ describe('Fucnionalidade: detalhes da conta', () => {
         cy.detalhesConta('Gabriel', 'Urquiza', 'Gabriel.qa')
         cy.get('.woocommerce-message').should('contain', 'Detalhes da conta modificados com sucesso.')
     });
-
 })
